@@ -34,9 +34,9 @@ module FiberHttpSegfault
       uri             =   URI.parse(url)
       
       http_client     =   HTTP::Client.new(uri).tap do |client|
-        client.connect_timeout  =   30.seconds
-        client.dns_timeout      =   10.seconds
-        client.read_timeout     =   2.minutes
+        client.connect_timeout  =   5.seconds
+        client.dns_timeout      =   5.seconds
+        client.read_timeout     =   15.seconds
       end
       
       puts "Fetching #{url} #{@use_fibers ? "using" : "without using"} fibers..."
