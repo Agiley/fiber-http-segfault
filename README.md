@@ -28,11 +28,6 @@ Installed using:
     $ crystal version
     Crystal 0.18.2 (2016-06-17)
 
-Seems like 1.0.2h isn't used by Crystal:
-
-    $ crystal examples/test_with_fibers.cr
-    Libssl >= 1.0.2 wasn't detected!
-
 ## Usage / Reproducing segfault
 
     $ git clone git://github.com/Agiley/fiber-http-segfault.git
