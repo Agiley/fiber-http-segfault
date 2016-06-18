@@ -9,7 +9,7 @@ The exact same error occurs when using [[fiberpool]](https://github.com/akitaonr
     $ cd fiber-http-segfault
     $ crystal deps
 
-Run example using fibers:
+Run example using fibers (results in segfault):
 
     $ crystal examples/test_with_fibers.cr 
 
