@@ -4,8 +4,21 @@ Simple lib to reproduce segfaults using HTTP::Client to fetch HTTPS urls using f
 
 The exact same error occurs when using [[fiberpool]](https://github.com/akitaonrails/fiberpool]) or [[Sidekiq.cr]](https://github.com/mperham/sidekiq.cr])
 
-## System / Versions
-### Crystal
+## Usage / Reproducing segfault
+    $ git clone git://github.com/Agiley/fiber-http-segfault.git
+    $ cd fiber-http-segfault
+    $ crystal deps
+
+Run example using fibers:
+
+    $ crystal examples/test_with_fibers.cr 
+
+Run example without using fibers:
+
+    $ crystal examples/test_without_fibers.cr 
+
+## System
+### Crystal Version
     $ crystal version
     Crystal 0.18.2 (2016-06-17)
 
@@ -13,7 +26,7 @@ Installed using:
 
     $ brew install crystal-lang
 
-### OpenSSL
+### OpenSSL Version
     $ openssl version
     OpenSSL 0.9.8zh 14 Jan 2016
 
@@ -27,20 +40,6 @@ Installed using:
     $ brew install crystal-lang
     $ crystal version
     Crystal 0.18.2 (2016-06-17)
-
-## Usage / Reproducing segfault
-
-    $ git clone git://github.com/Agiley/fiber-http-segfault.git
-    $ cd fiber-http-segfault
-    $ crystal deps
-
-Run example using fibers:
-
-    $ crystal examples/test_with_fibers.cr 
-
-Run example without using fibers:
-
-    $ crystal examples/test_without_fibers.cr 
 
 ## Stacktrace
 
