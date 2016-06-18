@@ -22,6 +22,7 @@ Run example without using fibers:
 
 This the resulting stacktrace when running examples/test_with_fibers.cr:
 
+```
 [4468511787] *CallStack::print_backtrace:Int32 +107
 [4468485031] __crystal_sigfault_handler +55
 [140735540987178] _sigtramp +26
@@ -47,3 +48,4 @@ This the resulting stacktrace when running examples/test_with_fibers.cr:
 [4468491395] ~procProc(Nil)@./libs/fiberpool/fiberpool.cr:24 +99
 [4468508570] *Fiber#run:(Int64 | Nil) +170
 [4468476213] ~procProc(Fiber, (Int64 | Nil))@/usr/local/Cellar/crystal-lang/0.18.2/src/fiber.cr:27 +21
+```
