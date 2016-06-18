@@ -26,6 +26,7 @@ Installed using:
     OpenSSL 1.0.2h  3 May 2016
     $ brew install crystal-lang
     $ crystal version
+    Crystal 0.18.2 (2016-06-17)
 
 Seems like 1.0.2h isn't used by Crystal:
 
