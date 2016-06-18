@@ -9,11 +9,11 @@ The exact same error occurs when using [[fiberpool]](https://github.com/akitaonr
     $ cd fiber-http-segfault
     $ crystal deps
 
-Run example using fibers (results in segfault):
+Run example using fibers (leads to segfault):
 
     $ crystal examples/test_with_fibers.cr 
 
-Run example without using fibers:
+Run example without using fibers (doesn't lead to segfault):
 
     $ crystal examples/test_without_fibers.cr 
 
