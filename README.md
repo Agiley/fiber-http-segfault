@@ -4,7 +4,7 @@ Simple lib to reproduce segfaults using HTTP::Client to fetch HTTPS urls using f
 
 The exact same error occurs when using [[fiberpool]](https://github.com/akitaonrails/fiberpool]) or [[Sidekiq.cr]](https://github.com/mperham/sidekiq.cr])
 
-## Background
+## System / Versions
 ### Crystal
     $ crystal version
     Crystal 0.18.2 (2016-06-17)
