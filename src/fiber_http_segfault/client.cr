@@ -6,6 +6,7 @@ module FiberHttpSegfault
     @urls : Array(String)
     
     def initialize(@use_fibers = true, @pool_size = 20)
+      # Popular sites + recently tested SSL sites on https://www.ssllabs.com/ssltest/
       @urls = File.read_lines("./urls.txt").map { |url| url.strip }
     end
     
