@@ -2,7 +2,7 @@
 
 Simple lib to reproduce segfaults using HTTP::Client to fetch HTTPS urls using fibers.
 
-The exact same error occurs when using [[fiberpool]](https://github.com/akitaonrails/fiberpool]) or [[Sidekiq.cr]](https://github.com/mperham/sidekiq.cr])
+The exact same error occurs when using [fiberpool](https://github.com/akitaonrails/fiberpool]) or [Sidekiq.cr](https://github.com/mperham/sidekiq.cr])
 
 ## Usage / Reproducing segfault
     $ git clone git://github.com/Agiley/fiber-http-segfault.git
